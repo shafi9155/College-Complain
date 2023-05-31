@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+
+/* complainForm */
+.ipt {
+  @apply border-2 border-slate-400 w-full p-3 rounded-lg ;
+}
+.ipt1 {
+  @apply border-2 border-slate-400 w-4/5 p-3 rounded-lg ;
+}
+.txtarea{
+  @apply  border-2 border-slate-400 w-full rounded-lg p-3;
+}
+.para{
+  @apply mt-3 mb-3;
+}
+.btn{
+  @apply border-2 border-none p-2 w-36 rounded-lg bg-custom-blue mb-10;
+}
+/* complaintForm */
+
+/* complaint Form page */
+.form{
+  @apply container w-1/2 mx-auto text-center mt-8 border p-10;
+}
+/* complaint Form page */
+
+
+@tailwind utilities;
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

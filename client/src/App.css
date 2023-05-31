@@ -1,0 +1,76 @@
+/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:wght@100;300&display=swap');
+body{
+  font-size:larger;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.clr{
+  background-color: rgb(73,83,85);
+  color: aliceblue;
+}
+
+li{
+  margin: 0 10px;
+}
+
+/* Navbar */
+
+.parent{
+  width: 70%;
+
+}
+
+.chat{
+  height: 74.4vh;
+}
+
+
+/* Signup */
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+.modal-content {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+   width: 35%;
+  border-width: 2px;
+  margin-top: 64px;
+  border-radius: 3px;
+  padding: 40px; 
+  
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+
+   font-size: 30px;
+  right: 10px;
+  padding: 5px 7px;
+}
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
+
+
+
+/* // image uploading */
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
