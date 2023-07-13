@@ -86,14 +86,6 @@ const getStudent=asyncHandler( async(req,res)=>{
 })
 
 const getStudentbyid=asyncHandler(async(req,res)=>{
-<<<<<<< HEAD
-    console.log(req.params._id)
-    try {
-   
-       const student = await Student.findById(req.params._id);
-        console.log(student)
-=======
- 
     try {const student = await Student.findById(req.params._id);
     
        res.status(200).json(student);
@@ -106,8 +98,6 @@ const getStudentbyid=asyncHandler(async(req,res)=>{
  const getallStudent=asyncHandler(async(req,res)=>{
  
     try {const student = await Student.find();
-    
->>>>>>> de42f254c0217ac20d68cdee285a369ea5fe65c5
        res.status(200).json(student);
      } 
      catch (err) {

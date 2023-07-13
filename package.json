@@ -1,11 +1,16 @@
 {
+  "name": "college complaint",
+  "version": "1.0.0",
+  "description": "IIITL College complaint",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Mohd Shafi",
+  "license": "ISC",
+  "proxy": "http://localhost:3000",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@fortawesome/free-regular-svg-icons": "^6.3.0",
-    "@fortawesome/free-solid-svg-icons": "^6.3.0",
-    "@material-ui/icons": "^4.11.3",
-    "@mui/material": "^5.11.8",
-    "react-router-dom": "^6.8.0"
+    "dotenv": "^14.2.0",
+    "md5-file": "^5.0.0"
   }
 }
