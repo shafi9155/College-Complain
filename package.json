@@ -1,5 +1,5 @@
 {
-  "name": "college complaint",
+  "name": "college-complaint",
   "version": "1.0.0",
   "description": "IIITL College complaint",
   "main": "server.js",
