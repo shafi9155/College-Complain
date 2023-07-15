@@ -26,7 +26,7 @@ function SingleBlogCmpln(props){
     }
     const upvote=async()=>{
         if(!upvoted){
-          const url = `http://localhost:5000/api/complain/upvote/${props.ticketno}`;
+          const url = `https://college-complaint.onrender.com/api/complain/upvote/${props.ticketno}`;
           const token=user.token
           const response = await fetch(url, {
             method: "PUT",
@@ -50,7 +50,7 @@ function SingleBlogCmpln(props){
 
     const getuserName=async()=>{
       
-        const url = `http://localhost:5000/api/students/getStudent/${props.user_id}`;
+        const url = `https://college-complaint.onrender.com/api/students/getStudent/${props.user_id}`;
         
         const response = await fetch(url, {
           method: "GET",
