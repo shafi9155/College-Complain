@@ -9,7 +9,7 @@ function Newcomplaints(props) {
    const staff=useSelector((state)=>state.staff)
  //  console.log(staff.staff.Role);
   const handleAccept=async ()=>{
-      const url = `https://college-complaint.onrender.com:1000/api/complain/assignComplain/${props.k._id}`;
+      const url = `http://localhost:5000/api/complain/assignComplain/${props.k._id}`;
   const response = await fetch(url, {
     method: "PUT",
     headers: {

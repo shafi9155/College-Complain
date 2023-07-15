@@ -48,7 +48,7 @@ function ComplaintDesc() {
 
   const getUser = async () => {
     // console.log(SingleComplain.user_id)
-    const url = `https://college-complaint.onrender.com:1000/api/students/getStudent/${SingleComplain.user_id}`;
+    const url = `http://localhost:5000/api/students/getStudent/${SingleComplain.user_id}`;
 
     const response = await fetch(url, {
       method: "GET",
@@ -103,7 +103,7 @@ function ComplaintDesc() {
 
   const escalteCmpln = async () => {
    
-    const url = `https://college-complaint.onrender.com:1000/api/complain//escalateComplain/${SingleComplain._id}`;
+    const url = `http://localhost:5000/api/complain//escalateComplain/${SingleComplain._id}`;
 
     const response = await fetch(url, {
       method: "PUT",
@@ -117,7 +117,7 @@ function ComplaintDesc() {
   };
   const  closeComplain = async () => {
     
-    const url = `https://college-complaint.onrender.com:1000/api/complain/closeComplain/${SingleComplain._id}`;
+    const url = `http://localhost:5000/api/complain/closeComplain/${SingleComplain._id}`;
   
     const response = await fetch(url, {
       method: "PUT",

@@ -12,7 +12,7 @@ function AdminStaff() {
        };
   const getStaff = async () => {
     // console.log(SingleComplain.user_id)
-    const url = "https://college-complaint.onrender.com:1000/api/staff/getallStaffData";
+    const url = "http://localhost:5000/api/staff/getallStaffData";
 
     const response = await fetch(url, {
       method: "GET",
@@ -27,7 +27,7 @@ function AdminStaff() {
   };
   const deleteuser = async () => {
     // console.log(SingleComplain.user_id)
-    const url = "https://college-complaint.onrender.com:1000/api/staff/getallStaffData";
+    const url = "http://localhost:5000/api/staff/getallStaffData";
 
     const response = await fetch(url, {
       method: "GET",

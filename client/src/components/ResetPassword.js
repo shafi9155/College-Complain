@@ -15,7 +15,7 @@ function ResetPassword() {
 // const token = urlParams.get('token');
 // console.log(token)
       
-        const url = `https://college-complaint.onrender.com:1000/api/staff/resetpass`;
+        const url = `http://localhost:5000/api/staff/resetpass`;
     
         const response = await fetch(url, {
           method: "POST",
