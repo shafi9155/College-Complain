@@ -5,7 +5,7 @@ function AdminStudent() {
   const [userData,setData] = useState();
   const getStudent = async () => {
     // console.log(SingleComplain.user_id)
-    const url = "https://college-complaint.onrender.com/api/students/getallStudent";
+    const url = "https://college-complaint.onrender.com:1000/api/students/getallStudent";
 
     const response = await fetch(url, {
       method: "GET",
