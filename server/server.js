@@ -1,3 +1,4 @@
+const path=require('path')
 const express=require("express")
 const nodemailer = require("nodemailer");
 const dotenv=require("dotenv")
@@ -29,6 +30,13 @@ app.use('/api/complain/comments',require('./routes/CommentRoutes'))
 
 app.use('/api/admin',require('./routes/Admin'))
 app.use('/api/staff',require('./routes/Staff'))
+
+if(process.env.NODE_ENV==='production'){
+    app.use(express.static(path.join(__dirname,'../client/build')))
+    app.get('*',(req,res)=>res.sendFile(
+        path.resolve(__dirname,'../','client','build','index.html')
+    ))
+}
 
 //listening
 app.listen(PORT,()=>{
