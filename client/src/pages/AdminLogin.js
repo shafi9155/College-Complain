@@ -33,7 +33,7 @@ const navigate=useNavigate();
 }, [admin,Success])
 
 
-    // const url = `http://localhost:5000/api/admin/adminLogin`;
+    // const url = `/api/admin/adminLogin`;
     // console.log(username);
     // const response = await fetch(url, {
     //   method: "POST",
